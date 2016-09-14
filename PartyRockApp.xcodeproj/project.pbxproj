@@ -315,6 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MatthiasHofmann.PartyRockApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,6 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MatthiasHofmann.PartyRockApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -350,6 +352,7 @@
 				B42FA4561D7DC6EF003B9ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

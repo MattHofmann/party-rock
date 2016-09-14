@@ -27,7 +27,33 @@ class VideoVC: UIViewController {
         super.viewDidLoad()
         
         titleLabel.text = partyRock.videoTitel
-        webView.loadHTMLString(partyRock.videoURL, baseURL: nil)
+        
+        
+        // webView.loadHTMLString(partyRock.videoURL, baseURL: nil)
+        
+        
+        
+        let bounds = UIScreen.main.bounds
+        let width = bounds.size.width - 20
+        let height = 200
+        let frame = 0
+        
+        webView.isOpaque = false
+        webView.backgroundColor = UIColor.clear
+        webView.scrollView.isScrollEnabled = false
+        webView.scrollView.bounces = false
+        
+        print("WebviewWidth: \(width)")
+        print("WebviewHeight \(height)")
+        
+        
+        let adjustedVideoURL = "<iframe width=\"\(width)\" height=\"\(height)\" src=\"\(partyRock.videoURL)?&playsinline=1\" frameborder=\"\(frame)\" allowfullscreen></iframe>"
+        
+        
+        webView.allowsInlineMediaPlayback = true
+        webView.loadHTMLString(adjustedVideoURL, baseURL: nil)
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +61,13 @@ class VideoVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    @IBAction func dismissVC(_ sender: AnyObject) {
+        self.dismiss(animated: true, completion: {});
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 
