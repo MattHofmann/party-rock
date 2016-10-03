@@ -4,7 +4,7 @@ An App loading data from the web and playing Youtube videos. (iOS10, Swift3)
 Including:
 - Custom TableViews & Fonts
 - Downloading Data
-- Playing Youtube-videos with correct Framesize
+- Playing Youtube-videos with correct framesize
 
 Screenshots:
 
