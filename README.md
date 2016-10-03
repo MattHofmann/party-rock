@@ -1,6 +1,11 @@
 # party-rock
 An App loading data from the web and playing Youtube videos. (iOS10, Swift3)
 
+Including:
+- Custom TableViews & Fonts
+- Downloading Data
+- Playing Youtube-videos with correct Framesize
+
 Screenshots:
 
 ![partyrock_screen_01](https://cloud.githubusercontent.com/assets/20715639/19027753/6d236f7a-896e-11e6-884c-ad4e1a1b56e5.PNG)
